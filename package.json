@@ -1,0 +1,64 @@
+{
+  "name": "junior-intern-project",
+  "description": "BLA internal project to become a junior developer",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "lint": "esLint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bla-internal-project/junior-intern-project.git"
+  },
+  "keywords": [],
+  "author": "Sebastián Betancur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bla-internal-project/junior-intern-project/issues"
+  },
+  "homepage": "https://github.com/bla-internal-project/junior-intern-project#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^28.1.3",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "supertest": "^6.2.4"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
+    "env": {
+      "node": true,
+      "es6": true,
+      "jest": true
+    },
+    "rules": {
+      "eqeqeq": "warn",
+      "prettier/prettier": [
+        "warn",
+        {
+          "semi": false
+        }
+      ]
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "printWidth": 120,
+    "endOfLine": "lf"
+  }
+}
