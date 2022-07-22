@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
+    "start": "node app.js",
+    "dev-start": "nodemon app.js",
     "lint": "esLint ."
   },
   "repository": {
@@ -13,7 +14,7 @@
     "url": "git+https://github.com/bla-internal-project/junior-intern-project.git"
   },
   "keywords": [],
-  "author": "Sebastián Betancur",
+  "author": "Sebastian Betancur",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bla-internal-project/junior-intern-project/issues"

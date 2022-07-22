@@ -1,0 +1,13 @@
+version: '3.9' # YAML version.
+
+# SERVICES: at this level, we include the images we are going to use in the net.
+services:
+  juntern: # juntern is our app's image.
+    build: . # Route of the Dockerfile on our local to build the image.
+    container_name: juntern # It sets the name of the container to avoid merge it with the image's name.
+    volumes:
+      - .:/usr/src/app # It allows the container's code to change as the local code changes.
+      - /usr/src/app/node_modules
+    ports: # Mapped ports.
+      - '8500:8500' # First one is the host's port, second one is container's port.
+    env_file: .env
