@@ -3,5 +3,7 @@
 ################################################
 
 node_modules
+.scannerwork/
+coverage
 .vscode/
 .env
